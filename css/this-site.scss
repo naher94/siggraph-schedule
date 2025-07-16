@@ -4,51 +4,54 @@
 
 @import 'app';
 
-.calendar-scroll {
-  display: flex;
-  height: 100%;
-  overflow-y: auto; /* Shared vertical scroll */
-  overflow-x: hidden;
-}
+.calendar{
+  .calendar-scroll {
+    display: flex;
+    height: 100%;
+    overflow-y: auto; /* Shared vertical scroll */
+    overflow-x: hidden;
+  }
 
-.time-column {
-  position: sticky;
-  left: 0;
-  width: 80px;
-  background: white;
-  border-right: 1px solid #ccc;
-  flex-shrink: 0;
-  z-index: 2;
-}
+  .time-column {
+    position: sticky;
+    left: 0;
+    width: 80px;
+    background: white;
+    border-right: 1px solid #ccc;
+    flex-shrink: 0;
+    z-index: 2;
+  }
 
-.time-slot {
-  height: 3rem;
-  line-height: 3rem;
-  padding-left: 8px;
-  border-bottom: 1px solid #eee;
-  font-size: 0.9rem;
-  color: #555;
-}
+  .time-slot {
+    height: 3rem;
+    line-height: 3rem;
+    padding-inline-end: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+  }
 
-.tracks-container {
-  display: flex;
-  overflow-x: auto;
-  position: relative;
-  background: #f8f8f8;
-  flex-grow: 1;
-}
+  .tracks-container {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    background: #f8f8f8;
+    flex-grow: 1;
+  }
 
-.track {
-  position: relative;
-  min-width: 180px;
-  border-right: 1px solid #ddd;
-}
+  .track {
+    position: relative;
+    min-width: 180px;
+    border-right: 1px solid #ddd;
+  }
 
-.event {
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  background: #ddd;
-  border-radius: 8px;
-  margin: 4px 0;
+  .event {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    background: #ddd;
+    border-radius: 8px;
+    margin: 4px 0;
+  }
 }
