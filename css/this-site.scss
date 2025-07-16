@@ -15,7 +15,6 @@
   .time-column {
     position: sticky;
     left: 0;
-    width: 80px;
     background: white;
     border-right: 1px solid #ccc;
     flex-shrink: 0;
@@ -25,7 +24,7 @@
   .time-slot {
     height: 3rem;
     line-height: 3rem;
-    padding-inline-end: 8px;
+    padding-inline: 8px;
     border-bottom: 1px solid #eee;
     font-size: 0.9rem;
     color: #555;
@@ -44,6 +43,7 @@
     position: relative;
     min-width: 180px;
     border-right: 1px solid #ddd;
+    // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horiztonally
   }
 
   .event {
