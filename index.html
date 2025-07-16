@@ -5,19 +5,16 @@ layout: default
 <section class="calendar">
   <div class="calendar-scroll">
     <div class="time-column">
-      <div class="time-slot">8 AM</div>
-      <div class="time-slot">9 AM</div>
-      <div class="time-slot">10 AM</div>
-      <div class="time-slot">11 AM</div>
-      <div class="time-slot">Noon</div>
-      <div class="time-slot">1 PM</div>
-      <div class="time-slot">2 PM</div>
-      <div class="time-slot">3 PM</div>
-      <div class="time-slot">4 PM</div>
-      <div class="time-slot">5 PM</div>
-      <div class="time-slot">6 PM</div>
-      <div class="time-slot">7 PM</div>
-      <div class="time-slot">8 PM</div>
+      {% for hour in (8..20) %}
+        {% assign display_hour = hour %}
+        {% if hour == 12 %}
+          <div class="time-slot">Noon</div>
+        {% elsif hour < 12 %}
+          <div class="time-slot">{{ hour }} <span>AM</span></div>
+        {% else %}
+          <div class="time-slot">{{ hour | minus: 12 }} <span>PM</span></div>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="tracks-container">
       <!-- for loop for tracks -->
