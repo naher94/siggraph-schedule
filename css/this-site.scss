@@ -43,6 +43,11 @@
     position: relative;
     min-width: 180px;
     border-right: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    grid-auto-rows: 1fr;        /* Each row gets equal height */
+    height: 100vh;              /* or any fixed height */
+    gap: 10px;  
     // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horiztonally
   }
 

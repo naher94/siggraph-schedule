@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<section class="calendar">
+<!-- loop the section calendar for each day with id to the day for link -->
+
+<!-- the date selector area -->
+
+<section class="calendar" id="sunday">
   <div class="calendar-scroll">
     <div class="time-column">
       {% for hour in (8..20) %}
@@ -18,6 +22,8 @@ layout: default
     </div>
     <div class="tracks-container">
       <!-- for loop for tracks -->
+      <!-- get a unique list of all locations and sort them alphabetically -->
+      
       <!-- then for loop for events in the track -->
       <div class="track">
         <div class="event" style="top: 0rem; height: 10rem;"></div>
