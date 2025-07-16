@@ -23,3 +23,7 @@ markdown: kramdown
 collections:
   people:
     output: true
+  presentations:
+    output: false
+  sessions:
+    output: true
