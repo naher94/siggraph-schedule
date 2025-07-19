@@ -2,11 +2,11 @@
 name: Test Presentation
 event-type: talk
 location: Room 32
-start-time:
-end-time:
+start-time: 2025-08-22 9:00 -0800
+end-time: 2025-08-22 10:30 -0800
 contributors: [rehan-butt]
-parent: yes
+has-children: no
 similar-presentations:
 ---
 
-description
+Join Women of SIGGRAPH Conversations (WOSC) for our annual food, mingling, and panel event, around the theme of "Resilience".

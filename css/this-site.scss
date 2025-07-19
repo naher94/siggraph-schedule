@@ -3,13 +3,22 @@
 ---
 
 @import 'app';
+@import 'variables';
 
-.calendar{
+body {
+  font-family: $lato;
+  font-weight: $lato-regular;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $lato;
+    font-weight: $lato-bold;
+  }
+  font-size: 14px;
+}
+
+.calendar {
   .calendar-scroll {
     display: flex;
     height: 100%;
-    overflow-y: auto; /* Shared vertical scroll */
-    overflow-x: hidden;
   }
 
   .time-column {
@@ -33,30 +42,61 @@
 
   .tracks-container {
     display: flex;
-    overflow-x: auto;
     position: relative;
     background: #f8f8f8;
     flex-grow: 1;
+    // scroll-snap-type: x mandatory; //TODO figure out how to make this one work
   }
 
   .track {
     position: relative;
-    min-width: 180px;
+    // min-width: 180px;
+    width: 20rem;
     border-right: 1px solid #ddd;
     display: grid;
+    scroll-snap-align: start;
     grid-template-columns: 1fr; /* One column */
-    grid-auto-rows: 1fr;        /* Each row gets equal height */
+    // grid-auto-rows: 1fr;        /* Each row gets equal height */
     height: 100vh;              /* or any fixed height */
-    gap: 10px;  
-    // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horiztonally
+    gap: 0.25rem;
+    --cell-height: 1fr;
+    grid-template-rows:
+			[tracks] auto
+			[time-0800] var(--cell-height)
+			[time-0815] var(--cell-height)
+			[time-0830] var(--cell-height)
+			[time-0845] var(--cell-height)
+			[time-0900] var(--cell-height)
+			[time-0915] var(--cell-height)
+			[time-0930] var(--cell-height)
+			[time-0945] var(--cell-height)
+			[time-1000] var(--cell-height)
+			[time-1015] var(--cell-height)
+			[time-1030] var(--cell-height)
+			[time-1045] var(--cell-height)
+			[time-1100] var(--cell-height)
+			[time-1115] var(--cell-height)
+			[time-1130] var(--cell-height)
+			[time-1145] var(--cell-height)
+			[time-1200] var(--cell-height);
+    // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horizontally
   }
 
   .event {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    background: #ddd;
-    border-radius: 8px;
-    margin: 4px 0;
+    background: #EAEAEA;
+    border-radius: 10px;
+    padding: 0.7142857143rem; /* 10px */
+    h4{
+      font-size: 1.1428571429rem; /* 16px */
+    }
+    p{
+      margin: 0;
+    }
+    .time{
+      color: rgba($pure-black, 0.6);
+    }
+    .contributors{
+      color: rgba($pure-black, 0.6);
+    }
   }
 }

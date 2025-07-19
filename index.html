@@ -20,17 +20,44 @@ layout: default
         {% endif %}
       {% endfor %}
     </div>
+
+    <!-- Loops track container per day -->
     <div class="tracks-container">
-      <!-- for loop for tracks -->
       <!-- get a unique list of all locations and sort them alphabetically -->
-      
-      <!-- then for loop for events in the track -->
+      {% assign alllocations = site.presentations | map: "location" | uniq | sort %}
+      <!-- for loop for tracks -->
+      {%- for location in alllocations -%}
+        <!-- get all presentations with this location -->
+        {% assign trackpresentations = site.presentations | where: "location", {{location}} %}
+        <div class="track">
+          <h3>{{location}}</h3>
+          <!-- then for loop for events in the track -->
+          {%- for presentation in trackpresentations -%}
+            {%- assign start-time-print = {{presentation.start-time}} | date: "%-I:%M%p" | downcase -%}
+            {%- assign start-time-print24 = {{presentation.start-time}} | date: "%R" -%}
+            {%- assign start-time-grid = {{presentation.start-time}} | date: "%H%M" -%}
+            {%- assign end-time-print = {{presentation.end-time}} | date: "%-I:%M%p" | downcase -%}
+            {%- assign end-time-print24 = {{presentation.end-time}} | date: "%R" -%}
+            {%- assign end-time-grid = {{presentation.end-time}} | date: "%H%M" -%}
+            <div class="event" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
+              <h4>{{presentation.name}}</h4>
+              <p class="time">
+                <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
+                <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
+              </p>
+              <p>{{presentation.content}}</p>
+              <p class="contributors">{{presentation.contributors}}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endfor -%}
+
       <div class="track">
-        <div class="event" style="top: 0rem; height: 10rem;"></div>
+        <div class="event" style="top: 0rem; height: 10rem; grid-row: time-0800 / time-0900;" ></div>
       </div>
       <div class="track">
-        <div class="event" style="top: 1rem; height: 6rem;"></div>
-        <div class="event" style="top: 5rem; height: 8rem;"></div>
+        <div class="event" style="top: 1rem; height: 6rem; grid-row: time-0800 / time-0900;"></div>
+        <div class="event" style="top: 5rem; height: 8rem; grid-row: time-0915 / time-1000;"></div>
       </div>
       <div class="track">
         <div class="event" style="top: 6rem; height: 5rem;"></div>
