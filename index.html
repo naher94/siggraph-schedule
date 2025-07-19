@@ -46,7 +46,15 @@ layout: default
                 <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
               </p>
               <p>{{presentation.content}}</p>
-              <p class="contributors">{{presentation.contributors}}</p>
+              <p class="contributors">
+                {%- for contributor in {{presentation.contributors}} -%}
+                  {% assign person = site.people | where: "slug", contributor %}
+                  {{person[0].name}}
+                  {%- if forloop.last == false -%}
+                    <span class="separator">, </span>
+                  {%- endif -%}
+                {%- endfor -%}
+              </p>
             </div>
           {%- endfor -%}
         </div>
