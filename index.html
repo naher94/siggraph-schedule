@@ -39,23 +39,27 @@ layout: default
             {%- assign end-time-print = {{presentation.end-time}} | date: "%-I:%M%p" | downcase -%}
             {%- assign end-time-print24 = {{presentation.end-time}} | date: "%R" -%}
             {%- assign end-time-grid = {{presentation.end-time}} | date: "%H%M" -%}
-            <div class="event" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
-              <h4>{{presentation.name}}</h4>
-              <p class="time">
-                <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
-                <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
-              </p>
-              <p>{{presentation.content}}</p>
-              <p class="contributors">
-                {%- for contributor in {{presentation.contributors}} -%}
-                  {% assign person = site.people | where: "slug", contributor %}
-                  {{person[0].name}}
-                  {%- if forloop.last == false -%}
-                    <span class="separator">, </span>
-                  {%- endif -%}
-                {%- endfor -%}
-              </p>
-            </div>
+            <a href="{{presentation.url | prepend: site.baseurl }}" class="event-link">
+              <div class="event" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
+                <h4>{{presentation.name}}</h4>
+                <p class="time">
+                  <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
+                  <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
+                </p>
+                <p class="description">
+                  {{presentation.content | remove: '<p>' | remove: '</p>'}}
+                </p>
+                <p class="contributors">
+                  {%- for contributor in {{presentation.contributors}} -%}
+                    {% assign person = site.people | where: "slug", contributor %}
+                    {{person[0].name}}
+                    {%- if forloop.last == false -%}
+                      <span class="separator">, </span>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </p>
+              </div>
+            </a>
           {%- endfor -%}
         </div>
       {%- endfor -%}

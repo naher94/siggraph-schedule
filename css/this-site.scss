@@ -52,6 +52,7 @@ body {
     position: relative;
     // min-width: 180px;
     width: 20rem;
+    padding-inline: 0.5em;
     border-right: 1px solid #ddd;
     display: grid;
     scroll-snap-align: start;
@@ -81,7 +82,9 @@ body {
 			[time-1200] var(--cell-height);
     // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horizontally
   }
-
+  .event-link{
+    color: inherit;
+  }
   .event {
     background: #EAEAEA;
     border-radius: 10px;
@@ -95,8 +98,12 @@ body {
     .time{
       color: rgba($pure-black, 0.6);
     }
+    .description{
+      margin-block: 0.25rem;
+    }
     .contributors{
       color: rgba($pure-black, 0.6);
     }
   }
+
 }

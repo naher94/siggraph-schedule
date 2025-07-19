@@ -1,5 +1,5 @@
 ---
-name: Test Presentation
+name: WOSC Breakfast Mixer
 event-type: talk
 location: Room 32
 start-time: 2025-08-22 9:00 -0800
