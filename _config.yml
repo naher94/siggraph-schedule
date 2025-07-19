@@ -24,6 +24,6 @@ collections:
   people:
     output: true
   presentations:
-    output: true
-  sessions:
     output: false
+  sessions:
+    output: true

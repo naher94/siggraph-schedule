@@ -4,7 +4,7 @@ layout: default
 
 <!-- loop the section calendar for each day with id to the day for link -->
 
-<!-- the date selector area -->
+<!-- TODO the date selector area -->
 
 <section class="calendar" id="sunday">
   <div class="calendar-scroll">
@@ -28,29 +28,43 @@ layout: default
       <!-- for loop for tracks -->
       {%- for location in alllocations -%}
         <!-- get all presentations with this location -->
-        {% assign trackpresentations = site.presentations | where: "location", {{location}} %}
+        {% assign track-sessions = site.sessions | where: "location", {{location}} %}
+        {% assign track-presentations = site.presentations | where: "location", {{location}} | where: "part-of-session", "no" %}
+        {% assign track-events = {{track-sessions}} | concat: {{track-presentations}} %}
         <div class="track" id="{{location | slugify}}">
           <h3>{{location}}</h3>
           <!-- then for loop for events in the track -->
-          {%- for presentation in trackpresentations -%}
-            {%- assign start-time-print = {{presentation.start-time}} | date: "%-I:%M%p" | downcase -%}
-            {%- assign start-time-print24 = {{presentation.start-time}} | date: "%R" -%}
-            {%- assign start-time-grid = {{presentation.start-time}} | date: "%H%M" -%}
-            {%- assign end-time-print = {{presentation.end-time}} | date: "%-I:%M%p" | downcase -%}
-            {%- assign end-time-print24 = {{presentation.end-time}} | date: "%R" -%}
-            {%- assign end-time-grid = {{presentation.end-time}} | date: "%H%M" -%}
-            <a href="{{presentation.url | prepend: site.baseurl }}" class="event-link">
+          {%- for event in track-events -%}
+            {%- assign start-time-print = {{event.start-time}} | date: "%-I:%M%p" | downcase -%}
+            {%- assign start-time-print24 = {{event.start-time}} | date: "%R" -%}
+            {%- assign start-time-grid = {{event.start-time}} | date: "%H%M" -%}
+            {%- assign end-time-print = {{event.end-time}} | date: "%-I:%M%p" | downcase -%}
+            {%- assign end-time-print24 = {{event.end-time}} | date: "%R" -%}
+            {%- assign end-time-grid = {{event.end-time}} | date: "%H%M" -%}
+            <a href="{{event.url | prepend: site.baseurl }}" class="event-link">
               <div class="event" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
-                <h4>{{presentation.name}}</h4>
+                <h4>{{event.name}}</h4>
                 <p class="time">
                   <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
                   <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
                 </p>
+                {%- if event.collection == "sessions" -%}
+                  {%- for presentation in event.presentations -%}
+                    {%- assign details = site.presentations | where: "slug", {{presentation}} -%}
+                    <div class="presentation">
+                      <h5>{{details[0].name}}</h5>
+                      <p class="contributors">
+                        {{details[0].contributors}}
+                      </p>
+                    </div>
+                  {%- endfor -%}
+                  <!-- if session loop through the session and grab the presentations for the little cards -->
+                {%- else -%}
                 <p class="description">
-                  {{presentation.content | remove: '<p>' | remove: '</p>'}}
+                  {{event.content | remove: '<p>' | remove: '</p>'}}
                 </p>
                 <p class="contributors">
-                  {%- for contributor in {{presentation.contributors}} -%}
+                  {%- for contributor in {{event.contributors}} -%}
                     {% assign person = site.people | where: "slug", contributor %}
                     {{person[0].name}}
                     {%- if forloop.last == false -%}
@@ -58,6 +72,9 @@ layout: default
                     {%- endif -%}
                   {%- endfor -%}
                 </p>
+                
+                {%- endif -%}
+
               </div>
             </a>
           {%- endfor -%}

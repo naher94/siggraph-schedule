@@ -5,7 +5,7 @@ location: Room 36
 start-time:
 end-time:
 contributors: [rehan-butt]
-has-children: yes
+part-of-session: "no"
 similar-presentations:
 ---
 
