@@ -29,7 +29,7 @@ layout: default
       {%- for location in alllocations -%}
         <!-- get all presentations with this location -->
         {% assign trackpresentations = site.presentations | where: "location", {{location}} %}
-        <div class="track">
+        <div class="track" id="{{location | slugify}}">
           <h3>{{location}}</h3>
           <!-- then for loop for events in the track -->
           {%- for presentation in trackpresentations -%}

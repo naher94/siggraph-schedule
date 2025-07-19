@@ -13,7 +13,27 @@ body {
     font-weight: $lato-bold;
   }
   font-size: 14px;
+  --cell-height: 1fr;
 }
+
+
+$start-hour: 8;
+$end-hour: 12;
+$interval: 15;
+
+$grid-rows: "[tracks] auto";
+
+@for $h from $start-hour through $end-hour {
+  @for $m from 0 through 45 {
+    @if ($m % $interval == 0 and not ($h == $end-hour and $m > 0)) {
+      $hour-str: if($h < 10, "0#{$h}", "#{$h}");
+      $min-str: if($m == 0, "00", "#{$m}");
+      $time-str: "#{$hour-str}#{$min-str}";
+      $grid-rows: "#{$grid-rows} [time-#{$time-str}] var(--cell-height)";
+    }
+  }
+}
+
 
 .calendar {
   .calendar-scroll {
@@ -28,6 +48,8 @@ body {
     border-right: 1px solid #ccc;
     flex-shrink: 0;
     z-index: 2;
+    grid-template-rows: #{$grid-rows};
+    display: grid;
   }
 
   .time-slot {
@@ -60,26 +82,7 @@ body {
     // grid-auto-rows: 1fr;        /* Each row gets equal height */
     height: 100vh;              /* or any fixed height */
     gap: 0.25rem;
-    --cell-height: 1fr;
-    grid-template-rows:
-			[tracks] auto
-			[time-0800] var(--cell-height)
-			[time-0815] var(--cell-height)
-			[time-0830] var(--cell-height)
-			[time-0845] var(--cell-height)
-			[time-0900] var(--cell-height)
-			[time-0915] var(--cell-height)
-			[time-0930] var(--cell-height)
-			[time-0945] var(--cell-height)
-			[time-1000] var(--cell-height)
-			[time-1015] var(--cell-height)
-			[time-1030] var(--cell-height)
-			[time-1045] var(--cell-height)
-			[time-1100] var(--cell-height)
-			[time-1115] var(--cell-height)
-			[time-1130] var(--cell-height)
-			[time-1145] var(--cell-height)
-			[time-1200] var(--cell-height);
+    grid-template-rows: #{$grid-rows};
     // on mobile make a track 80% of screen with for future tracks peak out from the edge and also have it snap scroll horizontally
   }
   .event-link{
