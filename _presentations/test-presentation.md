@@ -1,4 +1,5 @@
 ---
+layout: post
 name: WOSC Breakfast Mixer
 event-type: talk
 location: Room 32

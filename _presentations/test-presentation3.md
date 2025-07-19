@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Presentation 32
 event-type: talk
 location: Room 32
