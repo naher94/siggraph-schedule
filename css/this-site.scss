@@ -150,6 +150,10 @@ article{
     border-radius: $pill-radius;
     text-transform: capitalize;
   }
+  .post-header{
+    margin: 0;
+    margin-block-end: 5rem;
+  }
   .button-wrapper{
     a{
       aspect-ratio: 1/1;
