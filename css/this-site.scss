@@ -85,6 +85,15 @@ header{
     z-index: 2;
     grid-template-rows: #{$grid-rows};
     display: grid;
+    .time-slot{
+      font-weight: $lato-bold;
+      color: inherit;
+      span{
+        font-weight: $lato-regular;
+        color: #747474;
+        font-size: 0.75rem;
+      }
+    }
   }
 
   .time-slot {
@@ -102,7 +111,7 @@ header{
     position: relative;
     // background: #f8f8f8;
     flex-grow: 1;
-    // scroll-snap-type: x mandatory; //TODO figure out how to make this one work
+    //scroll-snap-type: x proximity; //TODO figure out how to make this one work
   }
 
   .track {
