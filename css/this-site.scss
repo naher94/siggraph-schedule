@@ -291,9 +291,9 @@ article{
         .add-button{
           margin-block-start: 0.5rem;
         }
-      }
-      .text-content{
-        padding-inline-start: 1.5rem;
+        & ~ .text-content{
+          padding-inline-start: 1.5rem;
+        }
       }
       .main-thumbnail{
         border-radius: 10px;

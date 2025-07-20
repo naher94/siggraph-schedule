@@ -1,3 +1,25 @@
 ---
 layout: post
 ---
+
+<section class="presentation-section grid-x cell">
+<!-- TODO add inline link to the section -->
+  {%- if page.thumbnail -%}
+  <div class="grid-x cell medium-4 image-content">
+    <div class="cell">
+      <img src="../img/{{pres-details[0].thumbnail}}" class="main-thumbnail">
+    </div>
+  </div>
+  {%- endif -%}
+
+  <div class="grid-x cell medium-8 text-content">
+    <p class="description">
+      {{page.content | remove: '<p>' | remove: '</p>'}}
+    </p>
+    {% assign people-list = {{page.contributors}} %}
+    {%- include contributors-container.html contributors-list=people-list -%}
+
+    {% assign similar-pres-list = {{page.similar-presentations}} %}
+    {%- include similar-presentations-container.html similar-presentation-list=similar-pres-list -%}
+  </div>
+</section>
