@@ -51,7 +51,16 @@ layout: default
       {%- if page.session-chair -%}
       <div class="cell session-chair">
         <div class="divider"></div>
-        Session Chair: {{page.session-chair}}
+        {% assign chair = site.people | where: "slug", {{page.session-chair}} %}
+        <div class="chair cell grid-x shrink align-middle">
+          <span class="cell shrink icon-wrapper">
+            {%- include podium.svg -%}
+          </span>
+          <div class="cell shrink">
+            Session Chair: 
+            <a href="{{chair[0].url}}">{{chair[0].name}}</a>
+          </div>
+        </div>
       </div>
       {%- endif -%}
     </div>
