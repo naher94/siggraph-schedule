@@ -133,6 +133,12 @@ header{
     h3{
       font-size: 1.25rem;
       margin-bottom: 0;
+      
+      // TODO figure out how to make this sticky; seems to be an issue with the x overflow scroll thing
+      //Also dont want to pull the headers out of the tracks otherwise the horiztonal inline scroll will be lost
+      position: sticky;
+      top: 0;
+      z-index: 2;
     }
   }
   .event-link{

@@ -1,0 +1,16 @@
+<div class="grid-x cell similar-container">
+  <h3 class="cell">Similar Presentations</h3>
+  {%- for similar in {{include.similar-presentation-list}} -%}
+    {% assign sim-pres = site.presentations | where: "slug", similar %}
+    <a href="{{sim-pres[0].url}}" class="similar-card cell grid-x medium-6">
+      {%- if {{sim-pres[0].thumbnail}} -%}
+      <div class="image-wrapper cell shrink">
+        <img src="../img/{{sim-pres[0].thumbnail}}" alt="">
+      </div>
+      {%- endif -%}
+      <div class="text-wrapper cell auto">
+        {{sim-pres[0].name}}
+      </div>
+    </a>
+  {%- endfor -%}
+</div>

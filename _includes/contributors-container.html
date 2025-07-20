@@ -1,0 +1,26 @@
+<div class="cell contributors-container grid-x">
+  <h3 class="visually-hidden">Contributors</h3>
+  {%- for contributor in {{include.contributors-list}} -%}
+    {% assign person = site.people | where: "slug", contributor %}
+    <a href="{{person[0].url}}" class="contributor-card cell grid-x shrink align-middle">
+      <!-- TODO if social icon add those -->
+      {%- if {{person[0].photo}} -%}
+      <div class="profile-wrapper cell shrink">
+        <img src="../img/{{person[0].photo}}" alt="">
+      </div>
+      {%- endif -%}
+      <div class="text-wrapper cell auto">
+        <p class="name">{{person[0].name}}</p>
+        <p class="company">{{person[0].company}}</p>
+      </div>
+    </a>
+  {%- endfor -%}
+</div>
+
+{%- comment -%}
+How to use. Pass the list of contributors in and the rest will be handled.
+
+{% assign people-list = {{pres-details[0].contributors}} %}
+{%- include contributors-container.html contributors-list=people-list -%}
+
+{%- endcomment -%}
