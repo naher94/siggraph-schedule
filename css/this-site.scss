@@ -207,4 +207,71 @@ article{
       }
     }
   }
+  section{
+    &.presentation-section{
+      .text-content{
+        padding-inline-start: 1.5rem;
+      }
+      .main-thumbnail{
+        border-radius: 10px;
+      }
+      h2{
+        font-size: 1.2857142857rem;
+        text-wrap: pretty;
+      }
+      .time{
+        color: rgba($pure-black, 0.6);
+        .icon-wrapper{
+          margin-inline-start: -0.4rem;
+          display: flex;
+        }
+      }
+      .contributors-container{
+        a{
+          color: inherit;
+          &:hover{
+            text-decoration: none;
+            &.contributor-card{
+              background-color: #EEEEEE;
+            }
+          }
+          &.contributor-card{
+            border-radius: 10px;
+            transition: $sprint;
+            padding: 0.5rem 1rem;
+            &:has(.profile-wrapper){
+              padding: 0.5rem 1rem 0.5rem 0.5rem;
+              .profile-wrapper{
+                margin-inline-end: 0.5rem;
+              }
+            }
+            p{
+              margin: 0;
+            }
+            .name{
+              font-size: 1.2857142857rem;
+              font-weight: $lato-bold;
+            }
+            .profile-wrapper{
+              position: relative;
+              border-radius: 5px;
+              &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                box-shadow: inset 0 0 0 2px rgba($pure-black, 0.1); 
+                pointer-events: none; /* lets clicks pass through if needed */
+                z-index: 2; /* ensure it’s above the image */
+                border-radius: 5px;
+              }
+              img{
+                width: 3.5rem;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

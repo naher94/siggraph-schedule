@@ -1,7 +1,8 @@
 ---
+layout: 
 name: Rehan Butt
-company: Disney
-photo:
+company: Walt Disney Animation Studios
+photo: rehan-butt.png
 associated-presentations:
 social-links:
 ---

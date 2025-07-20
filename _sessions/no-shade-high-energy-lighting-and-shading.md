@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: session
 name: No Shade, High Energy Lighting and Shading
 event-type: talk
 location: West Building, Ballroom C

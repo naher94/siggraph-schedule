@@ -1,4 +1,5 @@
 ---
+layout: 
 name: Kate Austen
 company: Oceanic Airlines
 photo:

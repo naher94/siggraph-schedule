@@ -7,6 +7,7 @@ start-time: 2025-08-22 14:00 -0800
 end-time: 2025-08-22 15:30 -0800
 contributors: [rehan-butt, kate-austen]
 part-of-session: "yes"
+thumbnail: ooooo.jpg
 similar-presentations:
 ---
 

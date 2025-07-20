@@ -1,0 +1,57 @@
+---
+layout: post
+---
+
+{%- for presentation in page.presentations -%}
+{%- assign pres-details = site.presentations | where: "slug", {{presentation}} -%}
+<section class="presentation-section grid-x cell">
+  <div class="grid-x cell medium-4">
+    <div class="cell">
+      <img src="../img/{{pres-details[0].thumbnail}}" class="main-thumbnail">
+    </div>
+    <div>
+      add to cal button
+    </div>
+  </div>
+  <div class="grid-x cell medium-8 text-content">
+    <div class="time grid-x cell align-middle">
+      <span class="cell shrink icon-wrapper">
+        {%- include clock.svg -%}
+      </span>
+      {%- assign start-time-print = {{pres-details[0].start-time}} | date: "%-I:%M%p" | downcase -%}
+      {%- assign start-time-print24 = {{pres-details[0].start-time}} | date: "%R" -%}
+      {%- assign end-time-print = {{pres-details[0].end-time}} | date: "%-I:%M%p" | downcase -%}
+      {%- assign end-time-print24 = {{pres-details[0].end-time}} | date: "%R" -%}
+      <span class="time cell shrink">
+        <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
+        <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
+      </span>
+    </div>
+    <h2 class="cell">{{pres-details[0].name}}</h2>
+    <p class="description">
+      {{pres-details[0].content | remove: '<p>' | remove: '</p>'}}
+    </p>
+    <div class="cell contributors-container grid-x">
+      {%- for contributor in {{pres-details[0].contributors}} -%}
+        {% assign person = site.people | where: "slug", contributor %}
+        <a href="{{person[0].url}}" class="contributor-card cell grid-x shrink align-middle">
+          <!-- TODO if profile image then add that in -->
+          <!-- TODO if social icon add those -->
+          {%- if {{person[0].photo}} -%}
+          <div class="profile-wrapper cell shrink">
+            <img src="../img/{{person[0].photo}}" alt="">
+          </div>
+          {%- endif -%}
+          <div class="text-wrapper cell auto">
+            <p class="name">{{person[0].name}}</p>
+            <p class="company">{{person[0].company}}</p>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+    <div class="cell similar-container">
+      similar presentations
+    </div>
+  </div>
+</section>
+{%- endfor -%}
