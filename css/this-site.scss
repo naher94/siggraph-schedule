@@ -141,6 +141,22 @@ $grid-rows: "[tracks] auto";
 
 }
 
+a{
+  &.add-button{
+    border-radius: 10px;
+    background-color: $brand-teal;
+    padding: 0.75rem 1rem;
+    color: $pure-white;
+    text-align: center;
+    transition: $sprint;
+  }
+  &:hover{
+    text-decoration: none;
+    color: $pure-white;
+    background-color: $brand-teal-dark;
+  }
+}
+
 article{
   .event-type{
     display: inline-block;
@@ -219,6 +235,12 @@ article{
   }
   section{
     &.presentation-section{
+      .image-content{
+        flex-direction: column;
+        .add-button{
+          margin-block-start: 0.5rem;
+        }
+      }
       .text-content{
         padding-inline-start: 1.5rem;
       }
@@ -239,7 +261,7 @@ article{
       .contributors-container{
         a{
           color: inherit;
-          // box-shadow: inset 0 0 0 1px rgba($pure-black, 0.1);
+          box-shadow: inset 0 0 0 1px rgba($pure-black, 0.1);
           // TODO do we need this???
           &:hover{
             text-decoration: none;
@@ -290,7 +312,7 @@ article{
           font-size: 1.2857142857rem;
         }
         a{
-          // box-shadow: inset 0 0 0 1px rgba($pure-black, 0.1);
+          box-shadow: inset 0 0 0 1px rgba($pure-black, 0.1);
           // TODO do we need this???
           &:hover{
             text-decoration: none;

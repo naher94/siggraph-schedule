@@ -5,13 +5,14 @@ layout: post
 {%- for presentation in page.presentations -%}
 {%- assign pres-details = site.presentations | where: "slug", {{presentation}} -%}
 <section class="presentation-section grid-x cell">
-  <div class="grid-x cell medium-4">
+  <div class="grid-x cell medium-4 image-content">
     <div class="cell">
       <img src="../img/{{pres-details[0].thumbnail}}" class="main-thumbnail">
     </div>
-    <div>
-      add to cal button
-    </div>
+    <a href="#" class="cell add-button">
+      <!-- TODO wire this button up -->
+      Add to Calendar
+    </a>
   </div>
   <div class="grid-x cell medium-8 text-content">
     <div class="time grid-x cell align-middle">
@@ -27,6 +28,7 @@ layout: post
         <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
       </span>
     </div>
+    <!-- TODO add inline link to the h2 -->
     <h2 class="cell">{{pres-details[0].name}}</h2>
     <p class="description">
       {{pres-details[0].content | remove: '<p>' | remove: '</p>'}}
