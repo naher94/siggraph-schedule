@@ -1,14 +1,59 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="grid-x grid-container">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  <header class="post-header cell grid-x">
+    <div class="cell">
+      <div class="event-type">{{page.event-type}}</div>
+    </div>
+    <div class="cell">
+      <h1 class="event-title" itemprop="name headline">{{ page.title }}</h1>
+    </div>
+    <div class="event-meta cell grid-x">
+      <div class="location grid-x cell align-middle shrink">
+        <span class="cell shrink icon-wrapper">
+          {%- include location.svg -%}
+        </span>
+        <span class="cell shrink">{{page.location}}</span>
+      </div>
+
+      <span class="divider-dot">•</span>
+
+      <div class="day grid-x cell align-middle shrink">
+        <span class="cell shrink icon-wrapper">
+          {%- include calendar.svg -%}
+        </span>
+        <time datetime="{{ page.start-time | %F }}" itemprop="startDate">{{ page.start-time | date: "%A, %B %e" }}</time>
+      </div>
+      
+      <span class="divider-dot">•</span> 
+
+      <div class="time grid-x cell align-middle shrink">
+        <span class="cell shrink icon-wrapper">
+          {%- include clock.svg -%}
+        </span>
+        {%- assign start-time-print = {{page.start-time}} | date: "%-I:%M%p" | downcase -%}
+        {%- assign start-time-print24 = {{page.start-time}} | date: "%R" -%}
+        {%- assign end-time-print = {{page.end-time}} | date: "%-I:%M%p" | downcase -%}
+        {%- assign end-time-print24 = {{page.end-time}} | date: "%R" -%}
+        <span class="time cell shrink">
+          <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
+          <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
+        </span>
+      </div>
+
+
+      {%- if page.session-chair -%}
+      <div class="cell session-chair">
+        <div class="divider"></div>
+        Session Chair: {{page.session-chair}}
+      </div>
+      {%- endif -%}
+    </div>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content" itemprop="EventBody">
     {{ content }}
   </div>
 

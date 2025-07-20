@@ -129,3 +129,40 @@ $grid-rows: "[tracks] auto";
   }
 
 }
+
+article{
+  .event-type{
+    display: inline-block;
+    background-color: rgba(#167BAA, 0.25);
+    padding-inline: 0.7142857143rem;
+    padding-block: 0.1428571429rem;
+    border-radius: $pill-radius;
+    text-transform: capitalize;
+  }
+  h1{
+    &.event-title{
+      font-size: 2.2857142857rem;
+    }
+  }
+  .event-meta{
+    color: rgba($pure-black, 0.6);
+    .divider-dot{
+      margin-inline: 1rem 0.4rem;
+    }
+    .icon-wrapper{
+      aspect-ratio: 1/1;
+      svg{
+        width: 1.5rem;
+      }
+    }
+    .session-chair{
+      .divider{
+        height: 2px;
+        width: 5rem;
+        background-color: rgba($pure-black, 0.25);
+        border-radius: $pill-radius;
+        margin-block: 1rem;
+      }
+    }
+  }
+}
