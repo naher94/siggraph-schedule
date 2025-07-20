@@ -405,7 +405,7 @@ details{
     summary{
       list-style: none; /* removes default chevron in Firefox */
       .text-content{
-        padding-inline-start: 1rem;
+        // padding-inline-start: 1rem;
         h2{
           margin-bottom: 0;
           font-size: 3rem;
@@ -438,6 +438,7 @@ details{
       border-radius: 10px;
       width: 6rem;
       aspect-ratio: 1/1;
+      margin-inline-end: 1rem;
       &:has(img) {
         &::before {
           content: "";
@@ -459,6 +460,29 @@ details{
     .icon-wrapper{
       svg{
         rotate: 180deg;
+      }
+    }
+  }
+  .expanded-content{
+    padding-inline-start: 7rem;
+    .social-container{
+      padding-block: 0.5rem;
+      a{
+        &.pill{
+          transition: $sprint;
+          background-color: #cecece;
+          border-radius: $pill-radius;
+          padding: 0.25rem 0.5rem;
+          color: inherit;
+          &:not(:last-of-type){
+            margin-inline-end: 0.25rem;
+          }
+        }
+        &:hover{
+          &.pill{
+            background-color: #b4b4b4;
+          }
+        }
       }
     }
   }

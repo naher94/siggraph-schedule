@@ -3,7 +3,8 @@ layout: page
 title: Contributors
 permalink: /contributors
 ---
-
+<!-- sort people list -->
+{%- assign all-people = site.people | sort: "name" -%}
 {%- for person in site.people -%}
 <details class="grid-x cell person-card" id="{{person.slug}}">
   <summary class="grid-x cell align-bottom">
@@ -22,6 +23,18 @@ permalink: /contributors
     <p>{{person.company}}</p>
     </div>
   </summary>
-  Something small enough to escape casual notice.
+  <div class="expanded-content grid-x cell medium-7">
+    <div class="social-container">
+      {%- for item in {{person.social-links}} -%}
+        {%- assign link = item | split: '~' -%}
+        <a href="{{link[1]}}" target="_blank" rel="noopener" class="pill">
+          <!-- TODO add social icon -->
+          {{link[0]}}
+          <span class="visually-hidden">Opens a new window</span>
+        </a>
+      {%- endfor -%}
+    </div>
+    {{person.content}}
+  </div>
 </details>
 {%- endfor -%}
