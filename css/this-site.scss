@@ -73,6 +73,7 @@ header{
   .calendar-scroll {
     display: flex;
     height: 100%;
+    overflow-x: scroll;
   }
 
   .time-column {
