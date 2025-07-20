@@ -25,15 +25,17 @@ body {
     font-weight: $lato-bold;
   }
   font-size: 14px;
-  --cell-height: 1fr;
+  // --cell-height: 1fr;
+  --cell-height: 5rem;
+  // TODO set cell height to rem so all grids have the same cell height
 }
 
 
 $start-hour: 8;
-$end-hour: 12;
+$end-hour: 20;
 $interval: 15;
 
-$grid-rows: "[tracks] auto";
+$grid-rows: "[tracks] var(--cell-height)";
 
 @for $h from $start-hour through $end-hour {
   @for $m from 0 through 45 {

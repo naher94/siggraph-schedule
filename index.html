@@ -11,13 +11,27 @@ layout: default
     <div class="time-column">
       {% for hour in (8..20) %}
         {% assign display_hour = hour %}
+        
         {% if hour == 12 %}
-          <div class="time-slot">Noon</div>
+          <div class="time-slot" style="grid-row: time-1200 / time-1300;">Noon</div>
         {% elsif hour < 12 %}
-          <div class="time-slot">{{ hour }} <span>AM</span></div>
+          {%- if hour < 10  -%} <!--Single Digital Check-->
+            {% assign newhour = hour | prepend: '0' %}
+            {%- assign hourplus = hour | plus: 1 -%}
+            {%- if hourplus < 10 -%} <!--If grid row end is also 1 digit-->
+              {% assign newhour2 = hour | plus: 1 | prepend: '0' %}
+              <div class="time-slot" style="grid-row: time-{{newhour}}00 / time-{{newhour2}}00;">{{ hour }} <span>AM</span></div>
+            {%- else -%}
+            {% assign newhour2 = hour | plus: 1 %}
+            <div class="time-slot" style="grid-row: time-{{newhour}}00 / time-{{newhour2}}00;">{{ hour }} <span>AM</span></div>
+            {%- endif -%}
+          {%- else -%}
+            <div class="time-slot" style="grid-row: time-{{hour}}00 / time-{{hour | plus: 1}}00;">{{ hour }} <span>AM</span></div>
+          {%- endif -%}
         {% else %}
-          <div class="time-slot">{{ hour | minus: 12 }} <span>PM</span></div>
+          <div class="time-slot" style="grid-row: time-{{hour}}00 / time-{{hour | plus: 1}}00;">{{ hour | minus: 12 }} <span>PM</span></div>
         {% endif %}
+
       {% endfor %}
     </div>
 
@@ -41,8 +55,8 @@ layout: default
             {%- assign end-time-print = {{event.end-time}} | date: "%-I:%M%p" | downcase -%}
             {%- assign end-time-print24 = {{event.end-time}} | date: "%R" -%}
             {%- assign end-time-grid = {{event.end-time}} | date: "%H%M" -%}
-            <a href="{{event.url | prepend: site.baseurl }}" class="event-link">
-              <div class="event" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
+            <a href="{{event.url | prepend: site.baseurl }}" class="event-link" style="grid-row: time-{{start-time-grid}} / time-{{end-time-grid}};">
+              <div class="event">
                 <h4>{{event.name}}</h4>
                 <p class="time">
                   <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
