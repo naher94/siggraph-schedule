@@ -7,8 +7,18 @@ layout: default
     <div class="cell">
       <div class="event-type">{{page.event-type}}</div>
     </div>
-    <div class="cell">
-      <h1 class="event-title" itemprop="name headline">{{ page.title }}</h1>
+    <div class="cell grid-x align-middle">
+      <div class="cell auto">
+        <h1 class="event-title" itemprop="name headline">{{ page.title }}</h1>
+      </div>
+      <div class="button-wrapper cell shrink">
+        <a href="{{page.original-url}}" target="_blank" rel="noopener">
+          <span class="cell shrink icon-wrapper align-center">
+            {%- include external-link.svg -%}
+          </span>
+          <span class="visually-hidden">Opens a new window</span>
+        </a>
+      </div>
     </div>
     <div class="event-meta cell grid-x">
       <div class="location grid-x cell align-middle shrink">
@@ -17,18 +27,14 @@ layout: default
         </span>
         <span class="cell shrink">{{page.location}}</span>
       </div>
-
       <span class="divider-dot">•</span>
-
       <div class="day grid-x cell align-middle shrink">
         <span class="cell shrink icon-wrapper">
           {%- include calendar.svg -%}
         </span>
         <time datetime="{{ page.start-time | %F }}" itemprop="startDate">{{ page.start-time | date: "%A, %B %e" }}</time>
       </div>
-      
       <span class="divider-dot">•</span> 
-
       <div class="time grid-x cell align-middle shrink">
         <span class="cell shrink icon-wrapper">
           {%- include clock.svg -%}
@@ -42,8 +48,6 @@ layout: default
           <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
         </span>
       </div>
-
-
       {%- if page.session-chair -%}
       <div class="cell session-chair">
         <div class="divider"></div>

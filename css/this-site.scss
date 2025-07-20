@@ -6,6 +6,17 @@
 @import 'variables';
 @import 'footer';
 
+// Visually hide any element (mostly text) accessibly.
+.visually-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body {
   font-family: $lato;
   font-weight: $lato-regular;
@@ -139,9 +150,40 @@ article{
     border-radius: $pill-radius;
     text-transform: capitalize;
   }
+  .button-wrapper{
+    a{
+      aspect-ratio: 1/1;
+      display: flex;
+      .icon-wrapper{
+        transition: $sprint;
+        aspect-ratio: 1/1;
+        border: solid 2px $brand-teal;
+        display: flex;
+        border-radius: 10px;
+        height: 3rem;
+        svg{
+          width: 2rem;
+          path{
+            transition: $sprint; 
+          }
+        }
+      }
+      &:hover{
+        .icon-wrapper{
+          background-color: $brand-teal;
+          svg{
+            path{
+              fill: $pure-white;
+            }
+          }
+        }
+      }
+    }
+  }
   h1{
     &.event-title{
       font-size: 2.2857142857rem;
+      margin-bottom: 0;
     }
   }
   .event-meta{
