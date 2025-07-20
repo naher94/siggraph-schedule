@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: presentation
 name: WOSC Breakfast Mixer
 event-type: talk
 location: West Building, Room 306

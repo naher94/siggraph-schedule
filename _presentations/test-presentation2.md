@@ -1,4 +1,5 @@
 ---
+layout: presentation
 name: Test Presentation Number 2! This is a test presentation and a longer title to check wrapping
 event-type: talk
 location: Room 36
