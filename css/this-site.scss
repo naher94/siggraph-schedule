@@ -392,3 +392,55 @@ article{
     }
   }
 }
+
+details{
+  &.person-card{
+  transition: $sprint;
+  padding: 0.5rem;
+  border-radius: 18px;
+    &:hover{
+      cursor: pointer;
+      background-color: #EEEEEE;
+    }
+    summary{
+      list-style: none; /* removes default chevron in Firefox */
+      .text-content{
+        padding-inline-start: 1rem;
+        h2{
+          margin-bottom: 0;
+          font-size: 3rem;
+          line-height: 1;
+        }
+        p{
+          margin-bottom: 0;
+          font-size: 1.25rem;
+          margin-inline-end: 0.5rem;
+        }
+      }
+      &::-webkit-details-marker {
+        display: none; /* removes default chevron in WebKit browsers */
+      }
+    }
+    .profile-wrapper{
+      position: relative;
+      border-radius: 10px;
+      width: 6rem;
+      aspect-ratio: 1/1;
+      &:has(img) {
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          box-shadow: inset 0 0 0 2px rgba($pure-black, 0.1);
+          pointer-events: none; /* lets clicks pass through if needed */
+          z-index: 2; /* ensure it’s above the image */
+          border-radius: 10px;
+        }
+      }
+      img{
+        width: 6rem;
+        border-radius: 10px;
+      }
+    }
+  }
+}
