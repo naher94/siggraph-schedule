@@ -1,0 +1,56 @@
+{
+  "talkUrls": [
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_294&sess=sess167"
+  ],
+  "talks": [
+    {
+      "sessionName": "Character Animation Make Some Noise",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess167",
+      "title": "Steerable Perlin Noise",
+      "descripion": "A new variation on an old classic, Steerable Perlin Noise offers anisotropic noise at little extra cost, offering a new dimension of control to the average artist.",
+      "presenters": [
+        {
+          "name": "Jacob Benjamin Rice",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=458563",
+          "institutions": [
+            {
+              "name": "Walt Disney Animation Studios",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=12854595273782770385"
+            }
+          ]
+        }
+      ],
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:00:00Z",
+      "endTime": "2025-08-10T16:22:00Z",
+      "room": "West Building, Rooms 301-305",
+      "interestAreas": [
+        "Arts & Design"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Animation",
+        "Art",
+        "Lighting",
+        "Modeling"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_273&sess=sess167",
+      "recommendedPresentations": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_335&sess=sess165",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_195&sess=sess190",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_155&sess=sess166"
+      ]
+    }
+  ]
+}
