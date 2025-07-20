@@ -65,7 +65,7 @@ $grid-rows: "[tracks] auto";
   .tracks-container {
     display: flex;
     position: relative;
-    background: #f8f8f8;
+    // background: #f8f8f8;
     flex-grow: 1;
     // scroll-snap-type: x mandatory; //TODO figure out how to make this one work
   }
@@ -87,11 +87,18 @@ $grid-rows: "[tracks] auto";
   }
   .event-link{
     color: inherit;
+    &:hover{
+      text-decoration: none;
+      .event{
+        background: #dddddd;
+      }
+    }
   }
   .event {
     background: #EAEAEA;
     border-radius: 10px;
     padding: 0.7142857143rem; /* 10px */
+    transition: $sprint;
     h4{
       font-size: 1.1428571429rem; /* 16px */
     }

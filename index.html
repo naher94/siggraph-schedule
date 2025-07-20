@@ -54,7 +54,13 @@ layout: default
                     <div class="presentation">
                       <h5>{{details[0].name}}</h5>
                       <p class="contributors">
-                        {{details[0].contributors}}
+                        {%- for contributor in {{details[0].contributors}} -%}
+                          {% assign person = site.people | where: "slug", contributor %}
+                          {{person[0].name}}
+                          {%- if forloop.last == false -%}
+                            <span class="separator">, </span>
+                          {%- endif -%}
+                        {%- endfor -%}
                       </p>
                     </div>
                   {%- endfor -%}
