@@ -235,6 +235,9 @@ article{
   }
   section{
     &.presentation-section{
+      &:not(:last-of-type){
+        margin-block-end: 8rem;
+      }
       .image-content{
         flex-direction: column;
         .add-button{
