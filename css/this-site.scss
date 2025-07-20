@@ -416,6 +416,18 @@ details{
           font-size: 1.25rem;
           margin-inline-end: 0.5rem;
         }
+        .icon-wrapper{
+          transition: $sprint;
+          aspect-ratio: 1/1;
+          display: flex;
+          height: 3rem;
+          svg{
+            width: 5rem;
+            path{
+              transition: $sprint; 
+            }
+          }
+        }
       }
       &::-webkit-details-marker {
         display: none; /* removes default chevron in WebKit browsers */
@@ -440,6 +452,13 @@ details{
       img{
         width: 6rem;
         border-radius: 10px;
+      }
+    }
+  }
+  &[open]{
+    .icon-wrapper{
+      svg{
+        rotate: 180deg;
       }
     }
   }

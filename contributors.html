@@ -13,7 +13,12 @@ permalink: /contributors
       {%- endif -%}
     </div>
     <div class="text-content cell grid-x auto align-bottom align-justify">
-    <h2>{{person.name}}</h2>
+    <div class="grid-x cell shrink">
+      <h2>{{person.name}}</h2>
+      <span class="cell shrink icon-wrapper">
+        {%- include chevron.svg -%}
+      </span>
+    </div>
     <p>{{person.company}}</p>
     </div>
   </summary>
