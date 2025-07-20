@@ -46,6 +46,28 @@ $grid-rows: "[tracks] auto";
   }
 }
 
+header{
+  &.site-header{
+    padding-block: 4rem 3rem;
+    .site-title{
+      font-weight: $lato-bold;
+      font-size: 1.2857142857rem;
+    }
+    nav{
+      font-size: 1rem;
+      a{
+        transition: $sprint;
+        border-radius: 10px;
+        &.page-link{
+          padding: 0.5rem 1rem;
+        }
+        &:hover{
+          background-color: #EEEEEE;
+        }
+      }
+    }
+  }
+}
 
 .calendar {
   .calendar-scroll {
@@ -152,8 +174,10 @@ a{
   }
   &:hover{
     text-decoration: none;
-    color: $pure-white;
-    background-color: $brand-teal-dark;
+    &.add-button{
+      color: $pure-white;
+      background-color: $brand-teal-dark;
+    }
   }
 }
 
