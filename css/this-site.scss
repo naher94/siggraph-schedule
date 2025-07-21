@@ -51,6 +51,9 @@ $grid-rows: "[tracks] var(--cell-height)";
 header{
   &.site-header{
     padding-block: 4rem 3rem;
+    @include breakpoint(small only){
+      padding-block: 2rem 0.5rem;
+    }
     .site-title{
       font-weight: $lato-bold;
       font-size: 1.2857142857rem;
@@ -62,6 +65,12 @@ header{
         border-radius: 10px;
         &.page-link{
           padding: 0.5rem 1rem;
+          &:not(:last-child) {
+            margin-right: 1rem;
+            @include breakpoint(small only){
+              margin-right: 0.25rem;
+            }
+          }
         }
         &:hover{
           background-color: #EEEEEE;
