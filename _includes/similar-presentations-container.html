@@ -1,4 +1,4 @@
-<div class="grid-x cell similar-container">
+<div class="grid-x cell similar-container grid-margin-x grid-margin-y">
   <h3 class="cell">Similar Presentations</h3>
   {%- for similar in {{include.similar-presentation-list}} -%}
     {% assign sim-pres = site.presentations | where: "slug", similar %}

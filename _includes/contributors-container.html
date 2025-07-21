@@ -1,4 +1,4 @@
-<div class="cell contributors-container grid-x">
+<div class="cell contributors-container grid-x grid-margin-x grid-margin-y">
   <h3 class="visually-hidden">Contributors</h3>
   {%- for contributor in {{include.contributors-list}} -%}
     {% assign person = site.people | where: "slug", contributor %}
