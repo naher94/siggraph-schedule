@@ -43,7 +43,8 @@ permalink: /contributors
         <!-- TODO does this assign handle the session chair case -->
         {% assign pres = site.presentations | where: "slug", item %}
         <!-- TODO a tag needed here -->
-        <div class="associated-presentations-card cell grid-x">
+        <a href="{{pres[0].url}}" class="associated-presentations-card">
+          <div class="cell grid-x">
           {%- if {{pres[0].thumbnail}} -%}
           <div class="image-wrapper small-4 cell">
             <img src="../img/{{pres[0].thumbnail}}" alt="">
@@ -78,6 +79,7 @@ permalink: /contributors
             </p>
           </div>
         </div>
+        </a>
       {%- endfor -%}
     </div>
   </div>

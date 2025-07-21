@@ -490,6 +490,14 @@ details{
     }
     .associated-presentations-container{
       .associated-presentations-card{
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+        border-radius: 18px;
+        color: inherit;
+        transition: $sprint;
+        &:hover{
+          background-color: #eeeeee;
+        }
         .image-wrapper{
           img{
             border-radius: 10px;
@@ -507,6 +515,9 @@ details{
         }
         p{
           text-wrap: pretty;
+          &.description{
+            margin-bottom: 0;
+          }
         }
         .name{
           font-size: 1.4rem;
