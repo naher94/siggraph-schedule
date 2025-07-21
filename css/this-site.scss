@@ -262,12 +262,19 @@ article{
     &.event-title{
       font-size: 2.2857142857rem;
       margin-bottom: 0;
+      text-wrap: pretty;
+      @include breakpoint(small only){
+        font-size: 1.6rem;
+      }
     }
   }
   .event-meta{
     color: rgba($pure-black, 0.6);
     .divider-dot{
       margin-inline: 1rem 0.4rem;
+      @include breakpoint(small only){
+        display: none;
+      }
     }
     .icon-wrapper{
       aspect-ratio: 1/1;

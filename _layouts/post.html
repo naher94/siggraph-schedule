@@ -21,21 +21,21 @@ layout: default
       </div>
     </div>
     <div class="event-meta cell grid-x">
-      <div class="location grid-x cell align-middle shrink">
+      <div class="location grid-x cell align-middle medium-shrink">
         <span class="cell shrink icon-wrapper">
           {%- include location.svg -%}
         </span>
         <span class="cell shrink">{{page.location}}</span>
       </div>
       <span class="divider-dot">•</span>
-      <div class="day grid-x cell align-middle shrink">
+      <div class="day grid-x cell align-middle medium-shrink">
         <span class="cell shrink icon-wrapper">
           {%- include calendar.svg -%}
         </span>
         <time datetime="{{ page.start-time | %F }}" itemprop="startDate">{{ page.start-time | date: "%A, %B %e" }}</time>
       </div>
       <span class="divider-dot">•</span> 
-      <div class="time grid-x cell align-middle shrink">
+      <div class="time grid-x cell align-middle medium-shrink">
         <span class="cell shrink icon-wrapper">
           {%- include clock.svg -%}
         </span>
