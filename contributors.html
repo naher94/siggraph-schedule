@@ -39,6 +39,7 @@ permalink: /contributors
     </div>
     <div class="associated-presentations-container cell grid-x">
       <!-- TODO sort by date -->
+      <!-- TODO if a talk is a part of a session link to the session page -->
       {%- for item in {{person.associated-presentations}} -%}
         <!-- TODO does this assign handle the session chair case -->
         {% assign pres = site.presentations | where: "slug", item %}
