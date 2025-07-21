@@ -398,12 +398,15 @@ details{
   transition: $sprint;
   padding: 0.5rem;
   border-radius: 18px;
-    &:hover{
-      cursor: pointer;
-      background-color: #EEEEEE;
-    }
     summary{
       list-style: none; /* removes default chevron in Firefox */
+      padding: 0.5rem;
+      border-radius: 18px;
+      transition: $sprint;
+      &:hover{
+        cursor: pointer;
+        background-color: #EEEEEE;
+      }
       .text-content{
         // padding-inline-start: 1rem;
         h2{
@@ -470,7 +473,7 @@ details{
       a{
         &.pill{
           transition: $sprint;
-          background-color: #cecece;
+          background-color: #eeeeee;
           border-radius: $pill-radius;
           padding: 0.25rem 0.5rem;
           color: inherit;
@@ -480,7 +483,40 @@ details{
         }
         &:hover{
           &.pill{
-            background-color: #b4b4b4;
+            background-color: #cecece;
+          }
+        }
+      }
+    }
+    .associated-presentations-container{
+      .associated-presentations-card{
+        .image-wrapper{
+          img{
+            border-radius: 10px;
+          }
+        }
+        .icon-wrapper{
+          aspect-ratio: 1/1;
+          display: flex;
+          svg{
+            rotate: 0deg;
+          }
+        }
+        .divider-dot{
+          margin-inline: 0.6rem 0.3rem;
+        }
+        p{
+          text-wrap: pretty;
+        }
+        .name{
+          font-size: 1.4rem;
+          font-weight: $lato-bold;
+          margin-bottom: 0;
+        }
+        .text-content{
+          padding-inline-start: 1rem;
+          .date-time{
+            color: rgba($pure-black, 0.6);
           }
         }
       }

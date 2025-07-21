@@ -34,7 +34,52 @@ permalink: /contributors
         </a>
       {%- endfor -%}
     </div>
+    <div class="description-containe cell">
     {{person.content}}
+    </div>
+    <div class="associated-presentations-container cell grid-x">
+      <!-- TODO sort by date -->
+      {%- for item in {{person.associated-presentations}} -%}
+        <!-- TODO does this assign handle the session chair case -->
+        {% assign pres = site.presentations | where: "slug", item %}
+        <!-- TODO a tag needed here -->
+        <div class="associated-presentations-card cell grid-x">
+          {%- if {{pres[0].thumbnail}} -%}
+          <div class="image-wrapper small-4 cell">
+            <img src="../img/{{pres[0].thumbnail}}" alt="">
+          </div>
+          {%- endif -%}
+          <div class="text-content cell auto grid-x">
+            <div class="date-time grid-x cell">
+            <div class="day grid-x cell align-middle shrink">
+              <span class="cell shrink icon-wrapper">
+                {%- include calendar.svg -%}
+              </span>
+              <time datetime="{{ page.start-time | %F }}" itemprop="startDate">{{ pres[0].start-time | date: "%A, %B %e" }}</time>
+            </div>
+            <span class="divider-dot cell shrink">•</span> 
+            <div class="time grid-x cell align-middle shrink">
+              <span class="cell shrink icon-wrapper">
+                {%- include clock.svg -%}
+              </span>
+              {%- assign start-time-print = {{pres[0].start-time}} | date: "%-I:%M%p" | downcase -%}
+              {%- assign start-time-print24 = {{pres[0].start-time}} | date: "%R" -%}
+              {%- assign end-time-print = {{pres[0].end-time}} | date: "%-I:%M%p" | downcase -%}
+              {%- assign end-time-print24 = {{pres[0].end-time}} | date: "%R" -%}
+              <span class="time cell shrink">
+                <time datetime="{{start-time-print24}}">{{start-time-print}}</time> - 
+                <time datetime="{{end-time-print24}}">{{end-time-print}}</time> PT
+              </span>
+            </div>
+            </div>
+            <p class="name cell">{{pres[0].name}}</p>
+            <p class="description cell">
+              {{pres[0].content | remove: '<p>' | remove: '</p>'}}
+            </p>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
   </div>
 </details>
 {%- endfor -%}
