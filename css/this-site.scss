@@ -87,6 +87,7 @@ header{
     z-index: 2;
     grid-template-rows: #{$grid-rows};
     display: grid;
+    gap: 0.25rem;
     .time-slot{
       font-weight: $lato-bold;
       color: inherit;
@@ -102,7 +103,7 @@ header{
     height: 3rem;
     line-height: 3rem;
     padding-inline: 8px;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
     font-size: 0.9rem;
     color: #555;
     text-align: right;
