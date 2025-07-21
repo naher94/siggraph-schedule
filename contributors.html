@@ -14,13 +14,13 @@ permalink: /contributors
       {%- endif -%}
     </div>
     <div class="text-content cell grid-x auto align-bottom align-justify">
-    <div class="grid-x cell shrink">
+    <div class="grid-x cell shrink align-middle">
       <h2>{{person.name}}</h2>
       <span class="cell shrink icon-wrapper">
         {%- include chevron.svg -%}
       </span>
     </div>
-    <p>{{person.company}}</p>
+    <p class="cell medium-shrink">{{person.company}}</p>
     </div>
   </summary>
   <div class="expanded-content grid-x cell medium-7">
@@ -46,11 +46,11 @@ permalink: /contributors
         <a href="{{pres[0].url}}" class="associated-presentations-card">
           <div class="cell grid-x">
           {%- if {{pres[0].thumbnail}} -%}
-          <div class="image-wrapper small-4 cell">
+          <div class="image-wrapper medium-4 cell">
             <img src="../img/{{pres[0].thumbnail}}" alt="">
           </div>
           {%- endif -%}
-          <div class="text-content cell auto grid-x">
+          <div class="text-content cell medium-auto grid-x">
             <div class="date-time grid-x cell">
             <div class="day grid-x cell align-middle shrink">
               <span class="cell shrink icon-wrapper">
