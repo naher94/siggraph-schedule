@@ -294,6 +294,10 @@ article{
         }
         & ~ .text-content{
           padding-inline-start: 1.5rem;
+          @include breakpoint(small only){
+            padding-inline-start: 0;
+            margin-block-start: 1rem;
+          }
         }
       }
       .main-thumbnail{
