@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: presentation
 name: "OOOOO Energy: Adding Dynamic Shading and Lighting to Environments on Pixar's Elio"
 event-type: talk
 location: West Building, Ballroom C
