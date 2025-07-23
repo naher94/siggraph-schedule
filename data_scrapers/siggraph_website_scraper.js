@@ -3,6 +3,15 @@ import fs        from "fs";
 
 const calendarUrl = "https://s2025.conference-schedule.org/";
 
+//keep copy of old siggraph talkss
+fs.rename("../data/siggraph_talks.json", "../data/siggraph_talks.old.json", (err) => {
+  if (err) {
+    console.warn(err);
+  } else {
+    "moved ../data/siggraph_talks.json to ../data/siggraph_talks.old.json"
+  }
+});
+
 async function scrapePage(url) {
   console.log("loading " + url);
   const browser = await puppeteer.launch({ headless: true }); // Optional: headless is true by default
@@ -35,11 +44,15 @@ async function scrapePage(url) {
 
   //gather all of the talks
   let allTalks = [...talks, ...presentations];
+  // allTalks = allTalks.slice(0, 10);
   // allTalks = ["https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_294&sess=sess167"];
   let talkObjs = {
     talkUrls : allTalks,
     talks : [],
   };
+
+  //lookup talks by url
+  let urlTalkMap = {};
 
   console.log("loading talk pages");
   for (let talk of allTalks){
@@ -60,7 +73,7 @@ async function scrapePage(url) {
 
         let titleElem       = getElems("presentation-title")[0];
         talkObj.title       = getElems("presentation-title")[0]?.textContent;
-        talkObj.descripion  = getElems("abstract")[0]?.textContent;
+        talkObj.description  = getElems("abstract")[0]?.textContent;
         talkObj.presenters  = getElems("presenter-details").map(e => {
           let personObj = {};
           personObj.img  = e.querySelector("img")?.src;
@@ -76,6 +89,7 @@ async function scrapePage(url) {
         })
 
         //right bar
+        talkObj.img        = getElems("representative-img")[0]?.src;
         talkObj.events     = getElems("event-type-name", getElems("event-types")[0]).map(e => e?.textContent);
         talkObj.dateString = getElems("presentation-date")[0]?.textContent;
         talkObj.startTime  = getElems("start-time")[0]?.getAttribute("utc_time");
@@ -93,12 +107,22 @@ async function scrapePage(url) {
         return talkObj;
       });
 
+      talkObj.url = talk;
+      console.log(talkObj);
       talkObjs.talks.push(talkObj);
+      urlTalkMap[talk] = talkObj;
 
     } catch (err) {
       console.warn(err);
       continue;
     }
+  }
+
+  for (let talkObj of talkObjs.talks){
+    talkObj.recommendedPresentationsUrls = [...talkObj.recommendedPresentations];
+    talkObj.nextPresentationUrl = talkObj.nextPresentation;
+    talkObj.nextPresentation = urlTalkMap[talkObj.nextPresentation]?.title;
+    talkObj.recommendedPresentations = talkObj.recommendedPresentations.map(t => urlTalkMap[t]?.title);
   }
 
   //write data to file

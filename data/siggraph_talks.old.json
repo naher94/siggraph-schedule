@@ -1,0 +1,792 @@
+{
+  "talkUrls": [
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_294&sess=sess167",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_273&sess=sess167",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_214&sess=sess167",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_506&sess=sess167",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_215&sess=sess172",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_281&sess=sess172",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_241&sess=sess172",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_295&sess=sess172",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_362&sess=sess175",
+    "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_291&sess=sess175"
+  ],
+  "talks": [
+    {
+      "sessionName": "Character Animation Make Some Noise",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess167",
+      "title": "Steerable Perlin Noise",
+      "description": "A new variation on an old classic, Steerable Perlin Noise offers anisotropic noise at little extra cost, offering a new dimension of control to the average artist.",
+      "presenters": [
+        {
+          "name": "Jacob Benjamin Rice",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=458563",
+          "institutions": [
+            {
+              "name": "Walt Disney Animation Studios",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=12854595273782770385"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/88P3Mua6wqBEqzbH.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:00:00Z",
+      "endTime": "2025-08-10T16:22:00Z",
+      "room": "West Building, Rooms 301-305",
+      "interestAreas": [
+        "Arts & Design"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Animation",
+        "Art",
+        "Lighting",
+        "Modeling"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Adaptive Tetrahedral Grids for Volumetric Path-Tracing",
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_294&sess=sess167",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_335&sess=sess165",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_195&sess=sess190",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_155&sess=sess166"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_273&sess=sess167"
+    },
+    {
+      "sessionName": "Character Animation Make Some Noise",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess167",
+      "title": "Adaptive Tetrahedral Grids for Volumetric Path-Tracing",
+      "description": "We advertise the use of tetrahedral grids constructed via the longest edge bisection algorithm for rendering volumetric data with path tracing. Our GPU implementation outperforms regular grids by up to a speed-up factor of 30 and allows to render production assets in real time.",
+      "presenters": [
+        {
+          "name": "Anis Benyoub",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=855753",
+          "institutions": [
+            {
+              "name": "Intel Corporation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=11881517349599982494"
+            }
+          ]
+        },
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_749143.png",
+          "name": "Jonathan Dupuy",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=749143",
+          "institutions": [
+            {
+              "name": "Intel Corporation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=11881517349599982494"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/mwRM6XMcjPb28otk.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:22:00Z",
+      "endTime": "2025-08-10T16:44:00Z",
+      "room": "West Building, Rooms 301-305",
+      "interestAreas": [
+        "Research & Education"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Rendering"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Synth2Track Editor for Efficient Match-Animation",
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_273&sess=sess167",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_288&sess=sess175",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_420&sess=sess208",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_268&sess=sess205"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_214&sess=sess167"
+    },
+    {
+      "sessionName": "Character Animation Make Some Noise",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess167",
+      "title": "Synth2Track Editor for Efficient Match-Animation",
+      "description": "Advancements in regression-based computer vision models have automated parts of VFX motion capture. However, complex shots often require manual intervention. By integrating user-specified cues into models, new tools improve tracking accuracy, blending automation with human expertise. This approach streamlines workflows and reduces time required for challenging VFX scenarios.",
+      "presenters": [
+        {
+          "name": "Douglas L. Moore",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=361004",
+          "institutions": [
+            {
+              "name": "Industrial Light & Magic",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=6106515287546747915"
+            }
+          ]
+        },
+        {
+          "name": "Jakob Buhmann",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=931853",
+          "institutions": [
+            {
+              "name": "Disney Research Studios",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=3641899578014621704"
+            }
+          ]
+        },
+        {
+          "name": "Dominik Borer",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=831853",
+          "institutions": [
+            {
+              "name": "Disney Research Studios",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=3641899578014621704"
+            }
+          ]
+        },
+        {
+          "name": "Martin Guay",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=782443",
+          "institutions": [
+            {
+              "name": "Disney Research Studios",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=3641899578014621704"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/8puz7vQHqYVm2gT9.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:44:00Z",
+      "endTime": "2025-08-10T17:06:00Z",
+      "room": "West Building, Rooms 301-305",
+      "interestAreas": [
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Artificial Intelligence/Machine Learning",
+        "Capture/Scanning",
+        "Computer Vision",
+        "Pipeline Tools and Work"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Highly Accurate GPU-Accelerated Animation Rigs for Toothless",
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_214&sess=sess167",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_436&sess=sess173",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_330&sess=sess166",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_284&sess=sess161"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_506&sess=sess167"
+    },
+    {
+      "sessionName": "Character Animation Make Some Noise",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess167",
+      "title": "Highly Accurate GPU-Accelerated Animation Rigs for Toothless",
+      "description": "Leveraging the GPU in rigging is challenging due to the requirement of proprietary deformers to achieve photorealistic creature work. We present our strategy to accomplish both, high-performance and high-quality deformations, giving animators an interactive experience with high visual fidelity in a streamlined asset pipeline.",
+      "presenters": [
+        {
+          "name": "Leon Sooi",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=857004",
+          "institutions": [
+            {
+              "name": "Framestore",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=15786230789526195018"
+            }
+          ]
+        },
+        {
+          "name": "Christoph Genzwuerker",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=496004",
+          "institutions": [
+            {
+              "name": "Framestore",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=15786230789526195018"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/1hNfpmEb5mmers2C.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T17:06:00Z",
+      "endTime": "2025-08-10T17:28:00Z",
+      "room": "West Building, Rooms 301-305",
+      "interestAreas": [
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Not Livestreamed",
+        "Not Recorded"
+      ],
+      "keywords": [
+        "Animation",
+        "Industry Insight",
+        "Real-Time"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_506&sess=sess167",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_261&sess=sess162",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_284&sess=sess161",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_502&sess=sess162"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_162&sess=sess168"
+    },
+    {
+      "sessionName": "Lots 'o' Limbs",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess172",
+      "title": "Sharing Rig Templates Between Productions at DreamWorks",
+      "description": "DreamWorks has long shared rig templates between different feature productions. Re-use avoids the need to constantly re-invent common behavior. This talk presents a new synchronization paradigm, based on Premo's new integrated versioning, that allows data to be efficiently synchronized between productions.",
+      "presenters": [
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_920543.jpg",
+          "name": "Stuart Bryson",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=920543",
+          "institutions": [
+            {
+              "name": "DreamWorks",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=3157331417185241978"
+            }
+          ]
+        },
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_868973.jpg",
+          "name": "Ben Kwa",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=868973",
+          "institutions": [
+            {
+              "name": "DreamWorks",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=3157331417185241978"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/iGLFUQ3pPNz1RHFv.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:00:00Z",
+      "endTime": "2025-08-10T16:22:00Z",
+      "room": "West Building, Ballroom C",
+      "interestAreas": [
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Not Livestreamed",
+        "Not Recorded"
+      ],
+      "keywords": [
+        "Animation",
+        "Pipeline Tools and Work"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Accelerating AEC Workflows with 3D Geospatial Context in Runtime Engines",
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_215&sess=sess172",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_400&sess=sess162",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_229&sess=sess171",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_180&sess=sess169"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_281&sess=sess172"
+    },
+    {
+      "sessionName": "Lots 'o' Limbs",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess172",
+      "title": "Accelerating AEC Workflows with 3D Geospatial Context in Runtime Engines",
+      "description": "HNTB, a leading infrastructure engineering firm, collaborates with Cesium to enhance AEC workflows by integrating 3D geospatial context into runtime engines. This partnership reduces modeling time for large-scale projects and introduces tools for efficient editing. Cesium's platform optimizes and streams 3D data, improving design, visualization, and analysis for infrastructure projects.",
+      "presenters": [
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_212983.jpg",
+          "name": "Philip Luhn",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=212983",
+          "institutions": [
+            {
+              "name": "HNTB Corporation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=11155829370005876069"
+            }
+          ]
+        },
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_623004.jpg",
+          "name": "Alex Paulson",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=623004",
+          "institutions": [
+            {
+              "name": "Cesium",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=1401472518524917594"
+            }
+          ]
+        },
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_502983.jpg",
+          "name": "Adam Liss",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=502983",
+          "institutions": [
+            {
+              "name": "HNTB Corporation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=11155829370005876069"
+            }
+          ]
+        },
+        {
+          "name": "David Willard",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=394193",
+          "institutions": [
+            {
+              "name": "HNTB Corporation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=11155829370005876069"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/pcwd6uKWbYHWzNm6.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:22:00Z",
+      "endTime": "2025-08-10T16:44:00Z",
+      "room": "West Building, Ballroom C",
+      "interestAreas": [
+        "Arts & Design",
+        "Gaming & Interactive",
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Digital Twins",
+        "Industry Insight",
+        "Modeling",
+        "Real-Time",
+        "Rendering"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Painterly Fur and Feathers of The Wild Robot",
+      "recommendedPresentations": [
+        null,
+        null,
+        "Synth2Track Editor for Efficient Match-Animation"
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_281&sess=sess172",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensubcur_110&sess=sess292",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_279&sess=sess164",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_214&sess=sess167"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_241&sess=sess172"
+    },
+    {
+      "sessionName": "Lots 'o' Limbs",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess172",
+      "title": "Painterly Fur and Feathers of The Wild Robot",
+      "description": "For The Wild Robot, the characters exhibit the sophistication of real fur and feathers in motion. But the final rendered look needed to integrate with a stylized painterly world. In LookDev, brushstrokes of detail are layered like an artist builds up strokes of paint, in response to specific key lights.",
+      "presenters": [
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_122973.jpg",
+          "name": "Lisa Connors",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=122973",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        },
+        {
+          "name": "Baptiste Van Opstal",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=201353",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        },
+        {
+          "name": "Dan McCann",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=172004",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/Y5Yxqcgjs8xegT8u.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:44:00Z",
+      "endTime": "2025-08-10T17:06:00Z",
+      "room": "West Building, Ballroom C",
+      "interestAreas": [
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Not Livestreamed",
+        "Not Recorded"
+      ],
+      "keywords": [
+        "Animation"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "Surface Constraint Wing Fold System on The Wild Robot",
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_241&sess=sess172",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_280&sess=sess174",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_256&sess=sess174",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_486&sess=sess174"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_295&sess=sess172"
+    },
+    {
+      "sessionName": "Lots 'o' Limbs",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess172",
+      "title": "Surface Constraint Wing Fold System on The Wild Robot",
+      "description": "Animating bird wing fold poses often requires labor-intensive counter animations. Our innovative surface constraint wing fold system, developed for The Wild Robot, enables animators to maintain folded wings seamlessly during dynamic movements. This system streamlines the process, saving time and allowing animators to focus on compelling performances.",
+      "presenters": [
+        {
+          "name": "Yukinori Inagaki",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=467443",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        },
+        {
+          "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_281353.png",
+          "name": "Evan Boucher",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=281353",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        },
+        {
+          "name": "Jakob Jensen",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=263004",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        },
+        {
+          "name": "Mike Amos",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=363004",
+          "institutions": [
+            {
+              "name": "DreamWorks Animation",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=5235208468974497235"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/jRCXhXUzrUePw9bk.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T17:06:00Z",
+      "endTime": "2025-08-10T17:28:00Z",
+      "room": "West Building, Ballroom C",
+      "interestAreas": [
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Not Livestreamed",
+        "Not Recorded"
+      ],
+      "keywords": [
+        "Animation",
+        "Performance"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "recommendedPresentations": [
+        "Painterly Fur and Feathers of The Wild Robot",
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_295&sess=sess172",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_241&sess=sess172",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_256&sess=sess174",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_282&sess=sess174"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=pros_128&sess=sess274"
+    },
+    {
+      "sessionName": "Real-Time and Mobile Techniques",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess175",
+      "title": "A Mobile Scanning Solution to Reconstruct Strand-Based Hairstyles",
+      "description": "We propose a novel mobile scanning solution that allows end-users to reconstruct 3D hairstyles with actual per-strand curves from just a phone scan. Using a mixture of deep learning and optimization, we make hair scanning fast and accessible while delivering qualitative assets ready to be used in any 3D software.",
+      "presenters": [
+        {
+          "name": "Philip-William Grassal",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=917193",
+          "institutions": [
+            {
+              "name": "Copresence AG",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=415667192103039414"
+            }
+          ]
+        },
+        {
+          "name": "Luca Hormann",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=664004",
+          "institutions": [
+            {
+              "name": "Copresence GmbH",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=10305985818212939806"
+            }
+          ]
+        },
+        {
+          "name": "Nadia Hamlaoui",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=764004",
+          "institutions": [
+            {
+              "name": "Copresence GmbH",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=10305985818212939806"
+            }
+          ]
+        },
+        {
+          "name": "Titus Leistner",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=864004",
+          "institutions": [
+            {
+              "name": "Copresence AG",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=415667192103039414"
+            }
+          ]
+        },
+        {
+          "name": "Lynton Ardizzone",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=564004",
+          "institutions": [
+            {
+              "name": "Copresence GmbH",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=10305985818212939806"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/Fib9aXrpL4k7ymmw.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:00:00Z",
+      "endTime": "2025-08-10T16:22:00Z",
+      "room": "West Building, Rooms 211-214",
+      "interestAreas": [
+        "Gaming & Interactive",
+        "Production & Animation"
+      ],
+      "recordings": [
+        "Livestreamed",
+        "Recorded"
+      ],
+      "keywords": [
+        "Augmented Reality",
+        "Capture/Scanning",
+        "Digital Twins",
+        "Games",
+        "Modeling",
+        "Virtual Reality"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "nextPresentation": "AI-Powered Real-Time VFX for Mobile",
+      "recommendedPresentations": [
+        "AI-Powered Real-Time VFX for Mobile",
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_362&sess=sess175",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_291&sess=sess175",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_155&sess=sess166",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_436&sess=sess173"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_291&sess=sess175"
+    },
+    {
+      "sessionName": "Real-Time and Mobile Techniques",
+      "sessionUrl": "https://s2025.conference-schedule.org/?post_type=page&p=15&sess=sess175",
+      "title": "AI-Powered Real-Time VFX for Mobile",
+      "description": "AI-Powered Real-Time VFX for Mobile explores the fusion of Generative Adversarial Networks (GANs) and GPU particle systems to achieve cinematic-quality fire and water effects on mobile devices. The technology optimizes real-time rendering across a wide range of hardware, enhancing mobile gaming and social media experiences while maintaining performance efficiency.",
+      "presenters": [
+        {
+          "name": "Domin Lee",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=162243",
+          "institutions": [
+            {
+              "name": "ByteDance Inc.",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=15667101482594584897"
+            }
+          ]
+        },
+        {
+          "name": "Anda Li",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=066204",
+          "institutions": [
+            {
+              "name": "ByteDance Inc.",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=15667101482594584897"
+            }
+          ]
+        },
+        {
+          "name": "Kexin Lin",
+          "url": "https://s2025.conference-schedule.org/?post_type=page&p=13&uid=353004",
+          "institutions": [
+            {
+              "name": "ByteDance Inc.",
+              "url": "https://s2025.conference-schedule.org/?post_type=page&p=16&inst=15667101482594584897"
+            }
+          ]
+        }
+      ],
+      "img": "https://s2025.conference-schedule.org/wp-content/linklings_snippets/representative_images/DpS25MqvHyZruJxj.jpg",
+      "events": [
+        "Talk"
+      ],
+      "dateString": "Sunday,  10 August 2025",
+      "startTime": "2025-08-10T16:22:00Z",
+      "endTime": "2025-08-10T16:44:00Z",
+      "room": "West Building, Rooms 211-214",
+      "interestAreas": [
+        "Gaming & Interactive",
+        "New Technologies"
+      ],
+      "recordings": [
+        "Not Livestreamed",
+        "Not Recorded"
+      ],
+      "keywords": [
+        "Artificial Intelligence/Machine Learning",
+        "Augmented Reality",
+        "Dynamics",
+        "Games",
+        "Generative AI",
+        "Real-Time",
+        "Rendering",
+        "Simulation",
+        "Virtual Reality"
+      ],
+      "registrations": [
+        "Full Conference",
+        "Virtual Access",
+        "Sunday"
+      ],
+      "recommendedPresentations": [
+        null,
+        null,
+        null
+      ],
+      "url": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_291&sess=sess175",
+      "recommendedPresentationsUrls": [
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_182&sess=sess299",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_302&sess=sess175",
+        "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_359&sess=sess257"
+      ],
+      "nextPresentationUrl": "https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_302&sess=sess175"
+    }
+  ]
+}
