@@ -6,7 +6,7 @@ location: West Building, Rooms 211-214
 start-time: 2025-08-10 09:22 -0700
 end-time: 2025-08-10 09:44 -0700
 contributors: [domin-lee, anda-li, kexin-lin]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 

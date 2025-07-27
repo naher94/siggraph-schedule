@@ -43,8 +43,8 @@ async function scrapePage(url) {
   });
 
   //gather all of the talks
-  let allTalks = [...talks, ...presentations];
-  // allTalks = allTalks.slice(0, 10);
+  let allTalks = [...presentations, ...talks];
+  allTalks = allTalks.slice(0, 10);
   // allTalks = ["https://s2025.conference-schedule.org/?post_type=page&p=14&id=gensub_294&sess=sess167"];
   let talkObjs = {
     talkUrls : allTalks,

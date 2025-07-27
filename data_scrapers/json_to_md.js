@@ -57,17 +57,20 @@ fs.readFile("../data/siggraph_talks.json", (err, data) => {
 `---
 layout: presentation
 name: "${talk.title}"
-event-type: ${talk.events[0].toLowerCase()}
+event-type: talk
 location: ${talk.room}
 start-time: ${utcToDateString(talk.startTime)}
 end-time: ${utcToDateString(talk.endTime)}
 contributors: ${"[" + talk.presenters.map(p => slugify(p.name)).join(", ") + "]"}
-part-of-session: "no"
+part-of-session: "${talk.sessionName ? "yes" : "no"}"
 similar-presentations:
 ---
 
 ${talk.description}
 `;
+
+
+// event-type: ${talk.events[0].toLowerCase()}
 
         fs.writeFile(`../_presentations/${slugify(talk.title)}.md`, md, err => {
             if (err) console.warn(err);
