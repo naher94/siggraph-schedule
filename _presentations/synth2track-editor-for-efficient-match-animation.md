@@ -6,7 +6,7 @@ location: West Building, Rooms 301-305
 start-time: 2025-08-10 09:44 -0700
 end-time: 2025-08-10 10:06 -0700
 contributors: [douglas-l-moore, jakob-buhmann, dominik-borer, martin-guay]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 

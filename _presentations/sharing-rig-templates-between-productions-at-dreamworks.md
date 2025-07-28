@@ -6,7 +6,7 @@ location: West Building, Ballroom C
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 09:22 -0700
 contributors: [stuart-bryson, ben-kwa]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 

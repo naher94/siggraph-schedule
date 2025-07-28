@@ -6,7 +6,7 @@ location: West Building, Ballroom C
 start-time: 2025-08-10 09:44 -0700
 end-time: 2025-08-10 10:06 -0700
 contributors: [lisa-connors, baptiste-van-opstal, dan-mccann]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 

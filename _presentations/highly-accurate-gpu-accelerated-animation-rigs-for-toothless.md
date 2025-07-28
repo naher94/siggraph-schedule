@@ -6,7 +6,7 @@ location: West Building, Rooms 301-305
 start-time: 2025-08-10 10:06 -0700
 end-time: 2025-08-10 10:28 -0700
 contributors: [leon-sooi, christoph-genzwuerker]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 

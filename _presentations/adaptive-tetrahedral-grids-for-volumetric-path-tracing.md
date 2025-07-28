@@ -6,7 +6,7 @@ location: West Building, Rooms 301-305
 start-time: 2025-08-10 09:22 -0700
 end-time: 2025-08-10 09:44 -0700
 contributors: [anis-benyoub, jonathan-dupuy]
-part-of-session: "no"
+part-of-session: "yes"
 similar-presentations:
 ---
 
