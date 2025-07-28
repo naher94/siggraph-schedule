@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "We Were Always the Future: Indigenous Science and the Power to Transform"
-event-type: talk
+event-type: frontiers
 location: East Building, Room 11
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 12:15 -0700

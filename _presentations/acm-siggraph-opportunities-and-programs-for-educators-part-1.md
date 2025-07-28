@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "ACM SIGGRAPH: Opportunities and Programs for Educators - Part 1"
-event-type: talk
+event-type: acm siggraph 365 - community showcase
 location: West Building, Rooms 208-209
 start-time: 2025-08-10 09:15 -0700
 end-time: 2025-08-10 10:15 -0700

@@ -1,8 +1,8 @@
 ---
 layout: presentation
 name: "Thoughtful3D Industry Meetup"
-event-type: talk
-location: 
+event-type: birds of a feather
+location: unspecified
 start-time: 2025-08-10 10:00 -0700
 end-time: 2025-08-10 12:00 -0700
 contributors: [conor-woodard, mike-cash-cacciamani]

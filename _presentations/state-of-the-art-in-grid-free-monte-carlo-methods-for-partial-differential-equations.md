@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "State of the Art in Grid-Free Monte Carlo Methods for Partial Differential Equations"
-event-type: talk
+event-type: course
 location: West Building, Rooms 220-222
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 12:15 -0700

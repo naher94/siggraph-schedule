@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "Graphics Computing and World Models Workshop"
-event-type: talk
+event-type: industry session
 location: East Building, Room 2
 start-time: 2025-08-10 10:00 -0700
 end-time: 2025-08-10 17:30 -0700

@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "Physically Based Shading in Theory and Practice"
-event-type: talk
+event-type: course
 location: West Building, Rooms 118-120
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 12:15 -0700

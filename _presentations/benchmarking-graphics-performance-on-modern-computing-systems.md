@@ -1,8 +1,8 @@
 ---
 layout: presentation
 name: "Benchmarking Graphics Performance on Modern Computing Systems"
-event-type: talk
-location: 
+event-type: birds of a feather
+location: unspecified
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 10:00 -0700
 contributors: [ross-cunniff, anthony-mansur, brigit-valencia]

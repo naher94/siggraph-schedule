@@ -1,7 +1,7 @@
 ---
 layout: presentation
 name: "Hands-On Class: Learn OpenUSD: Robotics Best Practices"
-event-type: talk
+event-type: labs
 location: West Building, Rooms 121-122
 start-time: 2025-08-10 09:00 -0700
 end-time: 2025-08-10 10:30 -0700
