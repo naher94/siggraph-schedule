@@ -56,11 +56,11 @@ fs.readFile("../data/siggraph_talks.json", (err, data) => {
         let md = 
 `---
 layout: presentation
-name: "${talk.title}"
-event-type: talk
-location: ${talk.room}
-start-time: ${utcToDateString(talk.startTime)}
-end-time: ${utcToDateString(talk.endTime)}
+name: "${talk.title ? talk.title : "unspecified"}"
+event-type: ${talk.events ? talk.events[0].toLowerCase() : "unspecified"}
+location: ${talk.room ? talk.room : "unspecified"}
+start-time: ${talk.startTime ? utcToDateString(talk.startTime) : "unspecified"}
+end-time: ${talk.endTime ? utcToDateString(talk.endTime) : "unspecified"}
 contributors: ${"[" + talk.presenters.map(p => slugify(p.name)).join(", ") + "]"}
 part-of-session: "${talk.sessionName ? "yes" : "no"}"
 similar-presentations:
